@@ -7,6 +7,11 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
+import { HomeComponent } from './home/home.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { FooterComponent } from './footer/footer.component';
+import { DetallesComponent } from './detalles/detalles.component';
+import { PerfilComponent } from './perfil/perfil.component';
 
 const config = {
   apiKey: "AIzaSyBCaG5k8PY2NL_8LjZIw11vxPunzgtLs54",
@@ -20,7 +25,12 @@ messagingSenderId: "681952830694"
 @NgModule({
   declarations: [
     AppComponent,
-    UserProfileComponent
+    UserProfileComponent,
+    HomeComponent,
+    NavbarComponent,
+    FooterComponent,
+    DetallesComponent,
+    PerfilComponent
   ],
   imports: [
     BrowserModule,
