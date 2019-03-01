@@ -4,11 +4,10 @@
 
 <!-- User NOT logged in -->
 <ng-template #guest>
-<h3>Bienvenido, Invitado</h3>
-<p>Login to get started...</p>
+<h3 >Bienvenido</h3>
 
-<button (click)="auth.googleSignin()">
-  <i class="fa fa-google"></i> Inicia sesión con Google
+<button (click)="auth.googleSignin()"  >
+  <i class="fa fa-google" style="color: black !important"></i> Inicia sesión con Google
 </button>
 
 </ng-template>
@@ -17,8 +16,8 @@
 <!-- User logged in -->
 <ng-template #authenticated>
 <div *ngIf="auth.user$ | async as user">
-  <h3>Bienvenido, {{ user.displayName }}</h3>
-  <p>Correo: {{ user.email }}</p>
+  <h3 style="float:right" >Bienvenido, {{ user.displayName }}</h3>
+  <!--<p>Correo: {{ user.email }}</p>-->
   <button (click)="auth.signOut()">Logout</button>
 </div>
 </ng-template>
