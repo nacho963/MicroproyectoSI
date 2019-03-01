@@ -7,11 +7,10 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
-import { HomeComponent } from './home/home.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { FooterComponent } from './footer/footer.component';
-import { DetallesComponent } from './detalles/detalles.component';
-import { PerfilComponent } from './perfil/perfil.component';
+import { NosotrosComponent } from './vistas/nosotros/nosotros.component';
+import { FooterComponent } from './componentes/footer/footer.component';
+import { NavbarComponent } from './componentes/navbar/navbar.component';
+import { HomeComponent } from './componentes/home/home.component';
 
 const config = {
   apiKey: "AIzaSyBCaG5k8PY2NL_8LjZIw11vxPunzgtLs54",
@@ -26,11 +25,10 @@ messagingSenderId: "681952830694"
   declarations: [
     AppComponent,
     UserProfileComponent,
-    HomeComponent,
-    NavbarComponent,
+    NosotrosComponent,
     FooterComponent,
-    DetallesComponent,
-    PerfilComponent
+    NavbarComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
