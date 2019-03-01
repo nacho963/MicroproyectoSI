@@ -6,11 +6,14 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { UserProfileComponent } from './user-profile/user-profile.component';
+
 import { NosotrosComponent } from './vistas/nosotros/nosotros.component';
 import { FooterComponent } from './componentes/footer/footer.component';
 import { NavbarComponent } from './componentes/navbar/navbar.component';
-import { HomeComponent } from './componentes/home/home.component';
+import { HomeComponent } from './vistas/home/home.component';
+import { PerfilComponent } from './componentes/perfil/perfil.component';
+import { DetallesComponent } from './componentes/detalles/detalles.component';
+
 
 const config = {
   apiKey: "AIzaSyBCaG5k8PY2NL_8LjZIw11vxPunzgtLs54",
@@ -24,11 +27,12 @@ messagingSenderId: "681952830694"
 @NgModule({
   declarations: [
     AppComponent,
-    UserProfileComponent,
     NosotrosComponent,
     FooterComponent,
     NavbarComponent,
-    HomeComponent
+    HomeComponent,
+    PerfilComponent,
+    DetallesComponent
   ],
   imports: [
     BrowserModule,
