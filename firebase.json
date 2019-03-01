@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/MicroProyectoIgnacioRodriguez",
+    "public": "dist/MicroProyecto",
     "ignore": [
       "firebase.json",
       "**/.*",

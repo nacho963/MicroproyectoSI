@@ -6,7 +6,7 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
+import { UserProfileComponent } from './user-profile/user-profile.component';
 
 const config = {
   apiKey: "AIzaSyBCaG5k8PY2NL_8LjZIw11vxPunzgtLs54",
@@ -20,7 +20,7 @@ messagingSenderId: "681952830694"
 @NgModule({
   declarations: [
     AppComponent,
-    
+    UserProfileComponent
   ],
   imports: [
     BrowserModule,
