@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from 'src/app/services/data.service';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -9,16 +8,17 @@ import { Router } from '@angular/router';
 })
 export class HomeComponent implements OnInit {
 
-  public Recetas = [];
-    constructor(private DataService: DataService, private router: Router) { }
+  recipe=[];
+  constructor(private rs: DataService) { }
 
   ngOnInit() {
+    this.getRecipe();
   }
 
-  getssssss(): void{
-
+  getRecipe(): void{
+    this.recipe = this.rs.recipes();
+    console.log(this.recipe);
   }
-
 }
 
 
