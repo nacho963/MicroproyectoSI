@@ -1,0 +1,8 @@
+<div class="card-group">
+    <div class="card" *ngFor="let data of recipes">
+     <a routerLink="/detalles"> <img class="card-img-top" src="{{data.image}}" alt="Card image cap"></a> 
+      <div class="card-body">
+        <h5 class="card-title">{{data.name}}</h5>
+  </div>
+
+

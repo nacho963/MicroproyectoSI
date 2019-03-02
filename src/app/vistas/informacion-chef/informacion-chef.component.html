@@ -1,16 +1,19 @@
 <div class="body">
-  <app-navbar></app-navbar>
-  <div class="container container-bg">
-    <div class="row">
-     <div class="col-2">
-       <div class="caja centrarCaja">
-         <a href="informacion-chef.component.css" name="{{data.name}}"><img src="{{data.profile_pic}}" width="100px" height="100px"></a>
-       </div>
-       <div class="row">
-         <h1 style="margin-top:150px">{{data.owner}}</h1>
-         <h1 style="margin-top:150px; margin-left: 20px">({{data.description}})</h1>
-       </div>
-     </div>
+    <div class="container-fluid fila">
+        <div class="col-8 caja" *ngFor="let data of chef">
+            <div class="row">
+              <div class="imagen cimagen"> 
+                <img src="{{data.profile_pic}}" width="200px" height="200px"></div>
+            </div>
+            <div class="row titulo">
+              <h1>{{data.name}}</h1>
+            </div>
+            <div class="row titulo2">
+                <h3>{{data.owner}}</h3>
+            </div>
+            <div class="row des">
+              <h5>{{data.description}}</h5>
+            </div>
+        </div>
     </div>
-  </div>
 </div>

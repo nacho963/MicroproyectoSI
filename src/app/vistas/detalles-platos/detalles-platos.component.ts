@@ -17,21 +17,11 @@ export class DetallesPlatosComponent implements OnInit {
     constructor(private DataService: DataService, private router: Router) { }
 
   ngOnInit() {
-    this.get_recipes();
+ 
     this.router
   }
 
-  get_recipes(): void {
-    this.Recetas = this.DataService.get_recipes();
-  }
 
-  getid(){
-    return this.DataService.get_recipes.name;
-  }
+
+
 }
-
-
-
-
-
-
