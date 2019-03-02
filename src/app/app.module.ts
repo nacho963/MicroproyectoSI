@@ -13,6 +13,7 @@ import { NavbarComponent } from './componentes/navbar/navbar.component';
 import { HomeComponent } from './vistas/home/home.component';
 import { PerfilComponent } from './componentes/perfil/perfil.component';
 import { DetallesComponent } from './componentes/detalles/detalles.component';
+import { UserProfileComponent } from './user-profile/user-profile.component';
 
 
 const config = {
@@ -32,7 +33,8 @@ messagingSenderId: "681952830694"
     NavbarComponent,
     HomeComponent,
     PerfilComponent,
-    DetallesComponent
+    DetallesComponent,
+    UserProfileComponent
   ],
   imports: [
     BrowserModule,
