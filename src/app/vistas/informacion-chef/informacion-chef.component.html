@@ -1,3 +1,16 @@
-<p>
-  informacion-chef works!
-</p>
+<div class="body">
+  <app-navbar></app-navbar>
+  <div class="container container-bg">
+    <div class="row">
+     <div class="col-2">
+       <div class="caja centrarCaja">
+         <a href="informacion-chef.component.css" name="{{data.name}}"><img src="{{data.profile_pic}}" width="100px" height="100px"></a>
+       </div>
+       <div class="row">
+         <h1 style="margin-top:150px">{{data.owner}}</h1>
+         <h1 style="margin-top:150px; margin-left: 20px">({{data.description}})</h1>
+       </div>
+     </div>
+    </div>
+  </div>
+</div>
