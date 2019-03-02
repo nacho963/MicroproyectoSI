@@ -1,0 +1,19 @@
+<div class="body">
+    <div class="container-fluid fila">
+        <div class="col-8 caja" *ngFor="let data of chef">
+            <div class="row">
+              <div class="imagen cimagen"> 
+                <img src="{{data.profile_pic}}" width="200px" height="200px"></div>
+            </div>
+            <div class="row titulo">
+              <h1>{{data.name}}</h1>
+            </div>
+            <div class="row titulo2">
+                <h3>{{data.owner}}</h3>
+            </div>
+            <div class="row des">
+              <h5>{{data.description}}</h5>
+            </div>
+        </div>
+    </div>
+</div>

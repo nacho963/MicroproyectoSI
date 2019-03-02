@@ -3,15 +3,14 @@ import { NgModule } from '@angular/core';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireAuthModule } from '@angular/fire/auth';
-
+import { HomeComponent } from './vistas/home/home.component';
+import { InformacionChefComponent } from './vistas/informacion-chef/informacion-chef.component';
+import { DetallesPlatosComponent } from './vistas/detalles-platos/detalles-platos.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
-import { HomeComponent } from './home/home.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { FooterComponent } from './footer/footer.component';
-import { DetallesComponent } from './detalles/detalles.component';
-import { PerfilComponent } from './perfil/perfil.component';
+import { NavbarComponent } from './componentes/navbar/navbar.component';
+import { FooterComponent } from './componentes/footer/footer.component';
 
 const config = {
   apiKey: "AIzaSyBCaG5k8PY2NL_8LjZIw11vxPunzgtLs54",
@@ -26,11 +25,13 @@ messagingSenderId: "681952830694"
   declarations: [
     AppComponent,
     UserProfileComponent,
-    HomeComponent,
     NavbarComponent,
     FooterComponent,
-    DetallesComponent,
-    PerfilComponent
+    HomeComponent,
+    InformacionChefComponent,
+    DetallesPlatosComponent,
+
+
   ],
   imports: [
     BrowserModule,
