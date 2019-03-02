@@ -1,8 +1,52 @@
-<div class="card">
-    <img class="card-img-top" src="https://forkgasm.com/images/carbonara.jpg" alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">  </h5>
-      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-      <p class="card-text"><small class="text-muted">Ingredientes: supporting,supporting,supporting</small></p>
+<div class="body">
+  <div class="container-fluid">
+    <div class="row centrar">
+        <div class="col-10 caja">
+            <div class="row">
+                <div class="imagen cimagen"> 
+                  <img src="{{recipes.image}}" width="150px" height="150px">
+                </div>
+              </div>
+              <div class="row titulo">
+                <h3>{{recipes.name}}</h3>
+              </div>
+              <div class="row des">
+                  <h6>{{recipes.description}}</h6>
+              </div>
+            <div class="row">
+                  <div class="col-4  desss">
+                    <h4>Ingredients</h4>
+                      <div class="row dess" *ngFor="let a of recipes.ingredient">
+                          <h6>*{{a.name}}: </h6>
+                          <h6>{{a.amount}} </h6>
+                          <h6>{{a.unit}}</h6>   
+                  </div>
+                   </div>
+                   <div class="col-4">
+                  <h4>IngredientsGroup</h4>
+                  <div class="row margen" *ngFor="let a of recipes.ingredientGroup">
+                      <div class="row espacio">
+                          <h6>*{{a.name}}: </h6>
+                      </div>
+                     <div class="row espacio" *ngFor="let b of a.ingredient">
+                        <h6>-{{b.name}}: </h6>
+                        <h6>{{b.amount}} </h6>
+                        <h6>{{b.unit}}</h6>  
+                     </div>    
+              </div>
+                   </div>
+                   <div class="col-4 desss">
+                      <h4>Steps</h4>
+                      <div class="row dessss" *ngFor="let a of recipes.step">
+                          <h6>*{{a.description}} </h6>   
+                  </div>
+                   </div>
+            </div>
+            <div class="row">
+              <h6>TAGS: </h6>
+                <h6  *ngFor="let a of recipes.tag">_{{a}} </h6>
+            </div>
+        </div>
     </div>
   </div>
+</div>

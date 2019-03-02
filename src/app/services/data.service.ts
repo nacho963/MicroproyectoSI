@@ -1599,6 +1599,11 @@ export class DataService {
     ]
   }
 
+  getData(data){
+    console.log(data);
+    return this.recipes().find(object => object.id===data);
+  }
+
 }
 
 

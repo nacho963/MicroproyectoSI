@@ -11,9 +11,10 @@ import { AppComponent } from './app.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { NavbarComponent } from './componentes/navbar/navbar.component';
 import { FooterComponent } from './componentes/footer/footer.component';
-import { DetallesComponent } from './componentes/detalles/detalles.component';
+
 import { HomeComponent } from './vistas/home/home.component';
 import { PerfilComponent } from './componentes/perfil/perfil.component';
+
 
 const config = {
   apiKey: "AIzaSyBCaG5k8PY2NL_8LjZIw11vxPunzgtLs54",
@@ -33,7 +34,8 @@ messagingSenderId: "681952830694"
     HomeComponent,
     InformacionChefComponent,
     DetallesPlatosComponent,
-    DetallesComponent,
+    
+   
     PerfilComponent
     
 

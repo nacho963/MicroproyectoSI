@@ -1,48 +1,45 @@
 <div id="demo" class="carousel slide fondo" data-ride="carousel">
-    <ul class="carousel-indicators">
-      <li data-target="#demo" data-slide-to="0" class="active"> </li>
-     
-     
-  
-    </ul>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-          <img style="width: 100%" src="../assets/1.jpg" alt="">
-      </div>
-      
-     
-  
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"> </li>
+   
+   
+
+  </ul>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+        <img style="width: 100%" src="../assets/1.jpg" alt="">
     </div>
-  
-    <a class="carousel-control-prev" href="#demo" data-slide="prev">
-      <span class="carousel-control-prev-icon"> </span>
-    </a>
-    <a class="carousel-control-next" href="#demo" data-slide="next">
-        <span class="carousel-control-next-icon"> </span>
-      </a>
-  
-  
+    
+   
+
   </div>
 
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"> </span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"> </span>
+    </a>
 
 
+</div>
 
 <div class="body">
-    <div class="container-fluid">
-      <div class="row">
-          <div class="col-3 caja" *ngFor="let data of recipe">
-              <div class="row">
-                  <div class="imagen cimagen"> 
-                    <a href="details/:{{data.id}}"><img src="{{data.image}}" width="150px" height="150px"></a>
-                  </div>
+  <div class="container-fluid">
+    <div class="row">
+        <div class="col-3 caja" *ngFor="let data of recipe">
+            <div class="row">
+                <div class="imagen cimagen"> 
+                  <a href="detalles/{{data.id}}"><img src="{{data.image}}" width="150px" height="150px"></a>
                 </div>
-                <div class="row titulo">
-                  <h3>{{data.name}}</h3>
+              </div>
+              <div class="row titulo">
+                <h3>{{data.name}}</h3>
+              </div>
+              <div class="row des">
+                  <h6>{{data.description}}</h6>
                 </div>
-                <div class="row des">
-                    <h6>{{data.description}}</h6>
-                  </div>
-          </div>
-      </div>
+        </div>
     </div>
   </div>
+</div>

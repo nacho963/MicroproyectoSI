@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 import { DataService } from '../../services/data.service';
 
 
@@ -13,15 +13,21 @@ import { DataService } from '../../services/data.service';
 })
 export class DetallesPlatosComponent implements OnInit {
 
-    public Recetas = [];
-    constructor(private DataService: DataService, private router: Router) { }
+  public Id = '';
+  recipes={};
+  data = [];
 
-  ngOnInit() {
- 
-    this.router
+  constructor(private rs: DataService, activateRoute: ActivatedRoute) { 
+    this.Id = activateRoute.snapshot.params['id'];
+}
+
+  ngOnInit() {;
+    console.log(this.Id);
+    console.log(this.getData());
+    }
+
+  getData(){
+    return this.recipes = this.rs.getData(this.Id);
   }
 
-
-
-
-}
+  }
