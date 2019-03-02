@@ -6,7 +6,6 @@ import { InformacionChefComponent } from './vistas/informacion-chef/informacion-
 import { DetallesPlatosComponent } from './vistas/detalles-platos/detalles-platos.component';
 
 
-
 const routes: Routes = [
 
   {
@@ -15,13 +14,11 @@ const routes: Routes = [
     {path: '',redirectTo:'/home',pathMatch: 'full'},
     {path: 'home',component: HomeComponent},
     {path: 'perfil',component: InformacionChefComponent},
-    {path: 'detalles',component: DetallesPlatosComponent}
+    {path: 'detalles/:id',component: DetallesPlatosComponent}
 
     ],
 
     },
-
-
  
 ];
 
